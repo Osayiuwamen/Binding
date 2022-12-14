@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* @font-face {
+  font-family: 'Neue Haas Unica Pro';
+  src: url('fonts/font/NeueHaasUnicaPro-Thin.ttf') format('ttf');
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: neue-haas-unica, sans-serif;
+  font-family: bungee, sans-serif;
+  background-color: #FFFEF4;
+}
+
+.header-section {
+  max-width: 128rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #000000;
+}
+
+.nav-items {
+  max-width: 116rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem;
+}
+
+.home-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #ffffff;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-icon {
+  transform: rotate(-45deg);
+  height: 5rem;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.hero-section {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  color: #D3647B;
+  max-width: 90rem;
+  margin: 0 auto;
+  font-size: 8rem;
+  line-height: 105%;
+}
+
+.odd-text {
+  font-weight: 800;
+}
+
+.mid-section {
+  max-width: 90rem;
+  margin: 2rem auto;
+}
+
+.word {
+  font-family: neue-haas-unica, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  max-width: 89.3rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem;
+}
+
+.word1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-crit {
+  padding: 0 3rem;
+}
+
+.learn {
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  color: #000000;
+  font-family: neue-haas-unica, sans-serif;
+  font-size: 2.8rem;
+  border-bottom: 2px solid #008772;
+}
+
+.description {
+  font-size: 5rem;
+  font-family: neue-haas-unica,
+    sans-serif;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.read-more {
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  font-size: 3.0rem;
+  line-height: 120%;
+  border-bottom: 2px solid #008772;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: none;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+}
+
+.btn-link {
+  color: #000000;
+}
+
+.pac-man {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-author {
+  font-family: neue-haas-unica, sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  color: #000000;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.poster-art {
+  width: 100%;
+}
+
+
+
+@media (max-width:50.75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section {
+    padding: 0 3rem;
+  }
+
+  .mid-section {
+    padding: 0 3rem;
+  }
+
+  .poster-art {
+    width: 90%;
+  }
+}
+
+@media (max-width:41em) {
+  html {
+    font-size: 40%;
+  }
+
+  .read-more {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width:23.43em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+/* Print  */
+@media print {
+  .header-text {
+    font-size: 4rem;
+  }
+
+  .word {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .poster-art {
+    display: none;
+  }
+
+  .section {
+    margin-top: 2rem;
+  }
+
+  .description {
+    font-size: 3rem;
+  }
+
+  .header-section {
+    display: none;
+  }
+}
